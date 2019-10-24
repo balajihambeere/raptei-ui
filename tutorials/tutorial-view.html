@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./tutorial.css">
+    <title>Tutorial-View</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" height="40" class="d-inline-block align-top" alt="raptei">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Architectures</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <ul class="nav flex-column" id="tutorialsNavSidebar">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            Bootstrap Tutorial <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-md-8 mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Tutorials</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Bootstrap Tutorial</li>
+                    </ol>
+                </nav>
+                <div>
+                    <h2>React Introduction</h2>
+                    <button type="button" class="btn btn-outline-primary">Previous</button>
+                    <button type="button" class="btn btn-outline-primary">Next</button>
+                    <hr />
+                    <article>
+                        <h4 id="what-is-react">What is React?</h4>
+                        <ol>
+                            <li>React is a JavaScript library for building user Interfaces.</li>
+                            <li>A Open Source framework maintained by facebook and a community under MIT license.</li>
+                            <li>React was created by Jordan Walke, as software engineer at facebook.</li>
+                        </ol>
+                        <h4 id="advantages-of-react">Advantages of React</h4>
+                        <ol>
+                            <li>Build reusable UI components.</li>
+                            <li>React provides a declarative API which makes writing application a lot easier.</li>
+                            <li>We can build high performance and interactive web applications.</li>
+                            <li>Build Single Page Application (SPA).</li>
+                            <li>It uses <strong>virtualDOM</strong> for DOM manipulation rather than
+                                <strong>realDOM</strong>.</li>
+                            <li>Support Server side rendering (SSR) which improves SEO.</li>
+                            <li>We can design complex react application using additional libraries for state management
+                                (redux library) and routing(react-router library).</li>
+                        </ol>
+                    </article>
+                    <hr />
+                </div>
+                <div>
+                    Advertisement
+                </div>
+                <button type="button" class="btn btn-outline-primary">Previous</button>
+                <button type="button" class="btn btn-outline-primary">Next</button>
+                <hr />
+                <div class="container ">
+                    <h3>Recommendations</h3>
+                    <hr />
+                    <div class="row">
+                        <div class="card-deck" id="coursesSection">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mt-3 bg-light">
+                Advertisement
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/feather.min.js"></script>
+    <script src="./tutorial-view.js"></script>
+</body>
+
+</html>
