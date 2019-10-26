@@ -7,23 +7,41 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="./category-list.css">
-    <title>Dashboard Tutorial</title>
+    <title>Category List</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i>raptei</i></a>
 
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Raptei</a>
-        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-        <ul class="navbar-nav px-3">
-            <li class="nav-item text-nowrap">
-                <a class="nav-link" href="#">Sign out</a>
-            </li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mt-2">
+                        <a class="nav-link">Welcome balaji Hambeere!</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../../images/avatar.jpg" class="img-fluid rounded-circle dropleft" height="40"
+                                width="40" />
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid pt-3">
         <div class="row">
             <nav class="col-md-2 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
@@ -36,6 +54,13 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
+                                <span data-feather="layers"></span>
+                                Categories
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="layers"></span>
                                 Tutorials
                             </a>
                         </li>
@@ -45,13 +70,13 @@
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <section class="featured-posts container">
                     <div class="section-title">
-                        <h2><span>My Tutorials</span></h2>
+                        <h2><span>My Categories</span></h2>
                     </div>
                 </section>
                 <div class="row" id="categoryListSection">
                     <div class="col-sm-12 col-md-6 col-lg-4 mb-3 card-deck">
                         <div class="card d-flex align-items-center justify-content-center bg-light">
-                            <a>
+                            <a href="./category-add.html">
                                 <span class="feather-size" data-feather="plus"></span>
                             </a>
                         </div>

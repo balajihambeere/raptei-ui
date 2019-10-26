@@ -72,7 +72,7 @@ $(function () {
             <small class="text-muted">Created By, ${item.createdBy}</small>
         </div>
         <div class="card-footer">
-              <a href="#" class="card-link">EDIT CATEGORY</a>
+              <a href="./category-add.html" class="card-link">EDIT CATEGORY</a>
         </div>
     </div>`;
         return template;
