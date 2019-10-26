@@ -72,9 +72,9 @@ $(function () {
 
 
     const courses = [
-        { id: 101, title: "Learn Bootstrap In depth", author: "Balaji Hambeere", imageUrl: "../images/raptei-logo.png" },
-        { id: 102, title: "Build Bootstrap realtime application", author: "Balaji Hambeere", imageUrl: "../images/raptei-logo.png" },
-        { id: 103, title: "Learn Advanced bootstrap", author: "Balaji Hambeere", imageUrl: "../images/raptei-logo.png" },
+        { id: 101, title: "Learn Bootstrap In depth", author: "Balaji Hambeere", imageUrl: "../../images/demopic/1.jpg" },
+        { id: 102, title: "Build Bootstrap realtime application", author: "Balaji Hambeere", imageUrl: "../../images/demopic/2.jpg" },
+        { id: 103, title: "Learn Advanced bootstrap", author: "Balaji Hambeere", imageUrl: "../../images/demopic/3.jpg" },
     ];
 
     function updateCourses(courses) {

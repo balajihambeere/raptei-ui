@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./dashboard-tutorial.css">
+    <link rel="stylesheet" href="./admin-tutorial.css">
     <title>Dashboard Tutorial</title>
 </head>
 
@@ -51,30 +51,34 @@
                 </section>
                 <div class="shadow">
                     <div class="container p-3">
-
-                        <ul class="nav nav-tabs bg-light" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs bg-light" id="tutorialsTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tutorialTab" role="tab"
                                     aria-controls="home" aria-selected="true">
                                     <span data-feather="layers"></span> Tutorial</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#metaTab" role="tab"
                                     aria-controls="profile" aria-selected="false">
                                     <span data-feather="credit-card"></span> Meta</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#topicsTab" role="tab"
                                     aria-controls="contact" aria-selected="false">
                                     <span data-feather="credit-card"></span> Topics</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#imagesTab" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <span data-feather="image"></span> Images</a>
+                            </li>
                         </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-content" id="tutorialsTabContent">
+                            <div class="tab-pane fade show active" id="tutorialTab" role="tabpanel" aria-labelledby="tutorial-tab">
                                 <form>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Title</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                        <input type="email" class="form-control bg-light" id="exampleInputEmail1"
                                             aria-describedby="emailHelp" placeholder="Enter title of the tutorial">
                                         <small id="emailHelp" class="form-text text-muted">It will be used as slug
                                             for
@@ -84,7 +88,7 @@
                                         <div class="col-md-8">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Description</label>
-                                                <textarea type="text" rows="8" class="form-control"
+                                                <textarea type="text" rows="8" class="form-control bg-light"
                                                     id="exampleInputEmail1" aria-describedby="emailHelp"
                                                     placeholder="Enter email"></textarea>
                                             </div>
@@ -92,7 +96,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="exampleFormControlSelect1">Category Select</label>
-                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                <select class="form-control bg-light" id="exampleFormControlSelect1">
                                                     <option>Angular</option>
                                                     <option>React</option>
                                                     <option>Nodejs</option>
@@ -108,13 +112,13 @@
 
                                 </form>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="tab-pane fade" id="metaTab" role="tabpanel" aria-labelledby="meta-tab">
                                 <form class="p-3">
                                     <div class="form-group row">
                                         <label for="inputEmail3" class="col-sm-2 col-form-label">Meta
                                             Description</label>
                                         <div class="col-sm-10">
-                                            <textarea type="text" rows="2" class="form-control" id="inputEmail3"
+                                            <textarea type="text" rows="2" class="form-control bg-light" id="inputEmail3"
                                                 placeholder="Meta description"></textarea>
                                         </div>
                                     </div>
@@ -122,7 +126,7 @@
                                         <label for="inputPassword3" class="col-sm-2 col-form-label">Meta
                                             Keywords</label>
                                         <div class="col-sm-10">
-                                            <textarea type="text" rows="2" class="form-control" id="inputEmail3"
+                                            <textarea type="text" rows="2" class="form-control bg-light" id="inputEmail3"
                                                 placeholder="Meta keywords"></textarea>
                                         </div>
                                     </div>
@@ -132,7 +136,7 @@
 
                                 </form>
                             </div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="tab-pane fade" id="topicsTab" role="tabpanel" aria-labelledby="topics-tab">
                                 <div class="d-flex bd-highlight">
                                     <div class="p-2 flex-grow-1 bd-highlight">
                                         <p>3 topics</p>
@@ -143,36 +147,40 @@
                                 </div>
                                 <hr />
                                 <form class="shadow p-3 mb-3">
+                                    <h2>Add New Topic</h2>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Title</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                        <input type="email" class="form-control bg-light" id="exampleInputEmail1"
                                             aria-describedby="emailHelp" placeholder="Enter topics title*">
                                         <small id="emailHelp" class="form-text text-muted">It will be used as slug
                                             for
                                             seo.</small>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-8"></div>
-                                        <div class="col-md-8"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Content</label>
-                                        <textarea type="text" rows="8" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter topics content*"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="inputEmail3">Meta Description</label>
-                                        <textarea type="text" rows="2" class="form-control" id="inputEmail3"
-                                            placeholder="Enter topics meta description*"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPassword3">Meta Keywords</label>
-                                        <textarea type="text" rows="2" class="form-control" id="inputEmail3"
-                                            placeholder="Enter topics meta keywords*"></textarea>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Content</label>
+                                                <textarea type="text" rows="10" class="form-control bg-light"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                    placeholder="Enter topics content*"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputEmail3">Meta Description</label>
+                                                <textarea type="text" rows="4" class="form-control bg-light" id="inputEmail3"
+                                                    placeholder="Enter topics meta description*"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword3">Meta Keywords</label>
+                                                <textarea type="text" rows="3" class="form-control bg-light" id="inputEmail3"
+                                                    placeholder="Enter topics meta keywords*"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="d-flex align-items-end justify-content-end">
-                                        <button type="submit" class="btn btn-primary ">Save</button>
+                                        <button type="button" class="btn btn-primary mr-2">Preview</button> <button
+                                            type="submit" class="btn btn-primary ">Save</button>
                                     </div>
 
                                 </form>
@@ -197,6 +205,22 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="tab-pane fade" id="imagesTab" role="tabpanel" aria-labelledby="images-tab">
+                                    <form class="p-3">
+                                        <div class="form-group row">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Image</label>
+                                            <div class="col-sm-10">
+                                                <textarea type="text" rows="2" class="form-control" id="inputEmail3"
+                                                    placeholder="Meta description"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-end justify-content-end">
+                                            <button type="submit" class="btn btn-primary ">Upload</button>
+                                        </div>
+    
+                                    </form>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -206,7 +230,7 @@
     <script src="../../js/jquery-3.3.1.slim.min.js"></script>
     <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="../../js/feather.min.js"></script>
-    <script src="./dashboard-tutorial.js"></script>
+    <script src="./admin-tutorial.js"></script>
     <script>
         feather.replace();
     </script>
