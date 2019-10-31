@@ -72,7 +72,7 @@ $(function () {
     }
 
     function dynamicCard(item) {
-        const template = `<div class="col-sm-12 col-md-6 col-lg-4 mb-3 card-deck">
+        const template = `<div class="col-sm-12 col-md-6 col-lg-3 mb-3 card-deck">
     <div class="card">
         <img src="${item.imageUrl}" class="card-img-top" alt="${item.title}">
         <div class="card-body">

@@ -11,28 +11,20 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark fixed-top bg-dark flex-md-nowrap p-0 
+    shadow d-none d-md-block d-lg-block">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i>raptei</i></a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-3">
-                    <li class="nav-item mt-2">
-                        <a class="nav-link">Welcome balaji Hambeere!</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="../../images/avatar.jpg" class="img-fluid rounded-circle dropleft" height="40"
+                            <img src="../../images/avatar.jpg" class="img-fluid rounded-circle" height="40"
                                 width="40" />
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-lg-right dropdown-menu-md-right"
+                            aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Profile</a>
                             <a class="dropdown-item" href="#">Logout</a>
                         </div>
@@ -42,9 +34,26 @@
         </div>
     </nav>
 
-    <div class="container-fluid pt-3">
+    <nav class="navbar navbar-dark  fixed-top bg-dark flex-md-nowrap p-0 shadow 
+    d-md-none d-lg-none d-xl-none">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i>raptei</i></a>
+            <div class="btn-group" role="group">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </div>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="../../images/avatar.jpg" class="img-fluid rounded-circle" height="40" width="40" />
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <nav class="col-lg-2 col-md-3 d-none d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -68,14 +77,14 @@
                     </ul>
                 </div>
             </nav>
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
                 <section class="featured-posts container">
                     <div class="section-title">
                         <h2><span>Create New Category</span></h2>
                     </div>
                 </section>
                 <div class="shadow">
-                    <div class="container p-3">
+                    <div class="container">
                         <form>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Title</label>
@@ -95,18 +104,33 @@
                                 <img height="200px" width="200px" src="../../images/default-img.jpg" />
                                 <button class="btn btn-danger"><span data-feather="trash"></span>Delete</button>
                             </div>
-                            <div class="d-flex align-items-end justify-content-end">
-                                <a type="submit" href="./category-list.html" role="button"
-                                    class="btn btn-primary mr-3">Cancel</a>
-                                <a type="submit" href="./category-list.html" role="button"
-                                    class="btn btn-primary">Save</a>
+                            <div class="d-none d-lg-block">
+                                <div class="d-flex align-items-end justify-content-end mt-1 pb-1">
+                                    <a type="submit" href="./category-list.html" role="button"
+                                        class="btn btn-primary mr-3">Cancel</a>
+                                    <a type="submit" href="./category-list.html" role="button"
+                                        class="btn btn-primary">Save</a>
+                                </div>
                             </div>
+                            <div class="d-sm-block d-md-none d-lg-none d-xl-none mt-1 pb-1">
+                                <div class="d-flex align-items-end justify-content-center">
+                                    <a type="submit" href="./category-list.html" role="button"
+                                        class="btn btn-primary mr-3">Cancel</a>
+                                    <a type="submit" href="./category-list.html" role="button"
+                                        class="btn btn-primary">Save</a>
+                                </div>
+                            </div>
+
                         </form>
                     </div>
                 </div>
+                <footer>
+                    <p class="d-flex align-items-end justify-content-center">@raptei.com</p>
+                </footer>
             </main>
         </div>
     </div>
+
     <script src="../../js/jquery-3.3.1.slim.min.js"></script>
     <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="../../js/feather.min.js"></script>
