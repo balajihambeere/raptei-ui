@@ -14,7 +14,7 @@ body { overflow-x: hidden; width: 100%; }
   .sidebar-sticky {
     position: relative;
     top: 0;
-    /* height: calc(100vh - 48px); */
+    height: calc(100vh - 48px);
     padding-top: .5rem;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
@@ -52,15 +52,12 @@ body { overflow-x: hidden; width: 100%; }
   }
 
   [role="main"] {
-    margin-top: 55px; /* Space for fixed navbar */
-  }
-  
-  @media (max-width: 768px) {
-    [role="main"] {
-      margin-bottom: 200px;
-    }
+    padding-top: 55px; /* Space for fixed navbar */
   }
 
+  .page-container{
+    padding-bottom: 55px;
+  }
   .section-title h2 {
     border-bottom:1px solid rgba(0,0,0,.15);
     margin-bottom:25px;

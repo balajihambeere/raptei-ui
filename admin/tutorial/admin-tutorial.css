@@ -1,3 +1,5 @@
+html,
+body { overflow-x: hidden; width: 100%; }
 .sidebar {
     position: fixed;
     top: 0;
@@ -50,14 +52,11 @@
 
   [role="main"] {
     padding-top: 55px; /* Space for fixed navbar */
-  }
+  } 
   
-  @media (max-width: 768px) {
-    [role="main"] {
-      margin-bottom: 200px; /* Space for fixed navbar */
-    }
+  .page-container {
+    padding-bottom: 55px;
   }
-
   .section-title h2 {
     border-bottom:1px solid rgba(0,0,0,.15);
     margin-bottom:25px;
