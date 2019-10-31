@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./profile.css">
+    <title>Admin Profile</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark fixed-top bg-dark flex-md-nowrap p-0 
+    shadow d-none d-md-block d-lg-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i>raptei</i></a>
+            <div id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../../images/avatar.jpg" class="img-fluid rounded-circle" height="40"
+                                width="40" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg-right dropdown-menu-md-right"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-dark  fixed-top bg-dark flex-md-nowrap p-0 shadow 
+    d-md-none d-lg-none d-xl-none">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i>raptei</i></a>
+            <div class="btn-group" role="group">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </div>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="../../images/avatar.jpg" class="img-fluid rounded-circle" height="40" width="40" />
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid page-container">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../category/category-list.html">
+                                <span data-feather="layers"></span> Categories
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin-tutorial.html">
+                                <span data-feather="layers"></span> Tutorials
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <section class="featured-posts container">
+                    <div class="section-title">
+                        <h2><span>Profile</span></h2>
+                    </div>
+                </section>
+                <div class="shadow">
+                    <div class="container p-3">
+                        <ul class="nav nav-tabs bg-light" id="tutorialsTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tutorialTab"
+                                    role="tab" aria-controls="home" aria-selected="true">
+                                    <span data-feather="lock"></span> Manage Account</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="tutorialsTabContent">
+                            <div class="tab-pane fade show active" id="tutorialTab" role="tabpanel"
+                                aria-labelledby="tutorial-tab">
+                                <form class="p-3">
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-2 col-form-label">Avatar</label>
+                                        <div class="col-sm-10">
+                                            <img height="200px" width="200px" src="../../images/default-img.jpg" />
+                                            <button type="file" class="btn btn-secondary-outline"><span
+                                                    data-feather="file"></span>ADD IMAGE</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-2 col-form-label">First Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control bg-light" id="inputEmail3"
+                                                placeholder="Enter first name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-2 col-form-label">Last Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" rows="2" class="form-control bg-light" id="inputEmail3"
+                                                placeholder="Enter last name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control bg-light" id="inputEmail3"
+                                                placeholder="Enter email address" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-2 col-form-label">Website</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" rows="2" class="form-control bg-light" id="inputEmail3"
+                                                placeholder="Enter website  url" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-2 col-form-label">Change
+                                            Password</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" rows="2" class="form-control bg-light" id="inputEmail3"
+                                                placeholder="Change password" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
+                                        <div class="col-sm-10">
+                                            <button type="submit" class="btn btn-primary ">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom shadow-sm bg-light align-middle">
+        <p class="d-flex  justify-content-center">www.raptei.com @copyright 2019</p>
+    </footer>
+    <script src="../../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/feather.min.js"></script>
+    <script src="./admin-tutorial.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

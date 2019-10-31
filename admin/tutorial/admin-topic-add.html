@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./admin-tutorial.css">
+    <title>Admin add topic to tutorial</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark fixed-top bg-dark flex-md-nowrap p-0 
+    shadow d-none d-md-block d-lg-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i>raptei</i></a>
+            <div id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../../images/avatar.jpg" class="img-fluid rounded-circle" height="40"
+                                width="40" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg-right dropdown-menu-md-right"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-dark  fixed-top bg-dark flex-md-nowrap p-0 shadow 
+    d-md-none d-lg-none d-xl-none">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i>raptei</i></a>
+            <div class="btn-group" role="group">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                </div>
+            </div>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="../../images/avatar.jpg" class="img-fluid rounded-circle" height="40" width="40" />
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid page-container">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../category/category-list.html">
+                                <span data-feather="layers"></span> Categories
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin-tutorial.html">
+                                <span data-feather="layers"></span> Tutorials
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <section class="featured-posts container">
+                    <div class="section-title">
+                        <h2><span>Add Topic to Tutorial</span></h2>
+                    </div>
+                </section>
+                <div class="shadow-sm">
+                    <div class="container p-3">
+                        <ul class="nav nav-tabs bg-light" id="tutorialsTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#topicsTab"
+                                    role="tab" aria-controls="contact" aria-selected="false">
+                                    <span data-feather="credit-card"></span> Add Topics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#imagesTab" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <span data-feather="image"></span> Images</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="tutorialsTabContent">
+                            <div class="tab-pane fade show active" id="topicsTab" role="tabpanel"
+                                aria-labelledby="topics-tab">
+                                <form class="p-3 mb-3">
+                                    <h2>Add New Topic</h2>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Title</label>
+                                        <input type="email" class="form-control bg-light" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter topics title*">
+                                        <small id="emailHelp" class="form-text text-muted">It will be used as slug
+                                            for
+                                            seo.</small>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Content</label>
+                                                <textarea type="text" rows="10" class="form-control bg-light"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                    placeholder="Enter topics content*"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputEmail3">Meta Description</label>
+                                                <textarea type="text" rows="4" class="form-control bg-light"
+                                                    id="inputEmail3"
+                                                    placeholder="Enter topics meta description*"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword3">Meta Keywords</label>
+                                                <textarea type="text" rows="3" class="form-control bg-light"
+                                                    id="inputEmail3"
+                                                    placeholder="Enter topics meta keywords*"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-end justify-content-end">
+                                        <button type="button" class="btn btn-primary mr-2">Preview</button> <button
+                                            type="submit" class="btn btn-primary ">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="imagesTab" role="tabpanel" aria-labelledby="images-tab">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Image Name</label>
+                                        <input type="email" class="form-control bg-light" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Enter name of the image">
+                                        <small id="emailHelp" class="form-text text-muted">
+                                            It will be used as alternate to image.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Choose Image</label>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <td><img height="100px" width="100px"
+                                                        src="../../images/default-img.jpg" /></td>
+                                                <td>../../images/default-img.jpg</td>
+                                                <td><button class="btn btn-danger"><span
+                                                            data-feather="trash"></span>Delete</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><img height="100px" width="100px"
+                                                        src="../../images/default-img.jpg" /></td>
+                                                <td>../../images/default-img.jpg</td>
+                                                <td><button class="btn btn-danger"><span
+                                                            data-feather="trash"></span>Delete</button></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="d-none d-lg-block">
+                                        <div class="d-flex align-items-end justify-content-end mt-1 pb-1">
+                                            <a type="submit" href="./category-list.html" role="button"
+                                                class="btn btn-primary mr-3">Cancel</a>
+                                            <a type="submit" href="./category-list.html" role="button"
+                                                class="btn btn-primary">Save</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-sm-block d-md-none d-lg-none d-xl-none mt-1 pb-1">
+                                        <div class="d-flex align-items-end justify-content-center">
+                                            <a type="submit" href="./category-list.html" role="button"
+                                                class="btn btn-primary mr-3">Cancel</a>
+                                            <a type="submit" href="./category-list.html" role="button"
+                                                class="btn btn-primary">Save</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer class="fixed-bottom shadow-sm bg-light align-middle">
+        <p class="d-flex justify-content-center">www.raptei.com @copyright 2019</p>
+    </footer>
+    <script src="../../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
