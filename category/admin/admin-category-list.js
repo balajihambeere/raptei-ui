@@ -5,55 +5,64 @@ $(function () {
             id: 101,
             tag: "angular",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/1.jpg",
+            bgColor: "#DC0232",
+            imageUrl: "../../content/images/demopic/1.jpg",
         },
         {
             id: 102,
-            tag: "react",
+            tag: "bootstrap",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/2.jpg"
+            bgColor: "#563d7c",
+            imageUrl: "../../content/images/demopic/2.jpg"
         },
         {
             id: 103,
-            tag: "expressjs",
+            tag: "ecmascript",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/3.jpg"
+            bgColor: "#FAD11F",
+            imageUrl: "../../content/images/demopic/3.jpg"
         },
         {
             id: 104,
             tag: "nodejs",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/4.jpg"
+            bgColor: "#76AE63",
+            imageUrl: "../../content/images/demopic/4.jpg"
         },
         {
             id: 105,
             tag: "typescript",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/5.jpg"
+            bgColor: "#294E80",
+            imageUrl: "../../content/images/demopic/5.jpg"
         },
         {
             id: 106,
-            tag: "ES6",
+            tag: "expressjs",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/6.jpg"
+            bgColor: "#eee",
+            imageUrl: "../../content/images/demopic/6.jpg"
         },
         {
             id: 107,
             tag: "javascript",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/7.jpg"
+            bgColor: "#eee",
+            imageUrl: "../../content/images/demopic/7.jpg"
         },
         {
             id: 108,
-            tag: "bootStrap",
+            tag: "react",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/8.jpg"
+            bgColor: "#61dafb",
+            imageUrl: "../../content/images/demopic/8.jpg"
         },
         {
             id: 109,
-            tag: "mongodb",
+            tag: "redux",
             createdBy: "admin",
-            imageUrl: "../../images/demopic/9.jpg"
+            bgColor: "#764abc",
+            imageUrl: "../../content/images/demopic/9.jpg"
         }
     ];
 
@@ -66,13 +75,16 @@ $(function () {
     function dynamicCard(item) {
         const template = `<div class="col-sm-12 col-md-6 col-lg-3 mb-3 card-deck">
     <div class="card">
-        <img src="${item.imageUrl}" class="card-img-top" alt="${item.tag}">
+         <div class="card-img-top text-wrap d-flex justify-content-center align-items-center text-capitalize"
+                                style="background-color: ${item.bgColor}">
+                                <div class="display-4">${item.tag}</div>
+         </div>
         <div class="card-body">
             <h5 class="card-title">${item.tag}</h5>
             <small class="text-muted">Created By, ${item.createdBy}</small>
         </div>
         <div class="card-footer">
-              <a href="./category-add.html" class="card-link">EDIT CATEGORY</a>
+              <a href="./admin-category-add.html" class="card-link">EDIT CATEGORY</a>
         </div>
     </div>`;
         return template;
