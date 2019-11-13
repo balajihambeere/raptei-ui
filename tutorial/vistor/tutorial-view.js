@@ -72,9 +72,27 @@ $(function () {
 
 
     const courses = [
-        { id: 101, title: "Learn Bootstrap In depth", author: "Balaji Hambeere", imageUrl: "../../images/demopic/1.jpg" },
-        { id: 102, title: "Build Bootstrap realtime application", author: "Balaji Hambeere", imageUrl: "../../images/demopic/2.jpg" },
-        { id: 103, title: "Learn Advanced bootstrap", author: "Balaji Hambeere", imageUrl: "../../images/demopic/3.jpg" },
+        {
+            id: 101,
+            title: "Angular Tutorial",
+            tag: "angular",
+            bgColor: "#DC0232",
+            updatedOn: "1 month ago"
+        },
+        {
+            id: 103,
+            title: "React Tutorial",
+            updatedOn: "1 month ago",
+            tag: "react",
+            bgColor: "#61dafb",
+        },
+        {
+            id: 104,
+            title: "Expressjs Tutorial",
+            updatedOn: " 1 month ago",
+            tag: "expressjs",
+            bgColor: "#eee",
+        },
     ];
 
     function updateCourses(courses) {
@@ -85,12 +103,15 @@ $(function () {
     }
 
     function dynamicCard(item) {
-        const template = `<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+        const template = `<div class="col-sm-12 col-md-6 col-lg-4 mb-3 card-deck">
             <div class="card">
-              <img src="${item.imageUrl}" class="card-img-top" alt="${item.title}">
+               <div class="card-img-top text-wrap d-flex justify-content-center align-items-center text-capitalize"
+                  style="background-color: ${item.bgColor}">
+                  <div class="display-4">${item.tag}</div>
+                </div>
               <div class="card-body">
                 <h5 class="card-title">${item.title}</h5>
-                <p class="card-text"><small class="text-muted">Author, ${item.author}</small></p>
+                <p class="card-text"><small class="text-muted">updatedOn, ${item.updatedOn}</small></p>
               </div>
         </div>`;
         return template;

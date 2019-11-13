@@ -45,7 +45,7 @@ $(function () {
         },
         {
             id: 101,
-            title: "TypeScript Tutorial",
+            title: "Typescript Tutorial",
             updatedOn: " 1 month ago",
             tag: "typescript",
             bgColor: "#294E80",
@@ -96,7 +96,7 @@ $(function () {
                <div class="display-4">${item.tag}</div>
     </div>
         <div class="card-body">
-            <h5 class="card-title">${item.title}</h5>
+            <h5 class="card-title"><a href="#">${item.title}</a></h5>
             <p class="card-text"><small class="text-muted">updated ${item.updatedOn}</small></p>
         </div>
     </div>`;
